@@ -12,11 +12,11 @@ public class WebServicesTestingExam {
 
 	@BeforeTest
 	public void setUp() {
-		RestAssured.baseURI = "http://localhost:9090";
+		RestAssured.baseURI = "http://localhost:8080";
 		RestAssured.basePath = "/landlords";
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void Test1() {
 
 		// request-response GET
@@ -31,7 +31,7 @@ public class WebServicesTestingExam {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void Test2() {
 
 		// create landlord pojo
@@ -58,7 +58,7 @@ public class WebServicesTestingExam {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void Test3_and_5() {
 		// landlord pojo
 		LandLord landLord = new LandLord();
